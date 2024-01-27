@@ -6,7 +6,7 @@
 /*   By: tkondo <tkondo@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 09:07:40 by tkondo            #+#    #+#             */
-/*   Updated: 2024/01/27 15:02:39 by tkondo           ###   ########.fr       */
+/*   Updated: 2024/01/27 15:14:55 by tkondo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,14 @@ void	ft_putabs(int num)
 	digit = '0' + (num % 10) * sign;
 	write(1, &digit, 1);
 }
+
 void	ft_putnbr(int num)
 {
 	if (num < 0)
 		write(1, "-", 1);
 	ft_putabs(num);
 }
+
 /* RM this line to test
 #include <limits.h>
 
